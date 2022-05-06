@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;600;700&family=Roboto:ital@0;1&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+font-family: 'Roboto', sans-serif;
+}
+
+
+header{
+   background-image: url("./images/bg-header-desktop.svg"); 
+   height: 10vh;
+   background-color: lightblue;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.container{
+ 
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+
+
+.card-group{
+   margin-top: 6rem;
+}
+
+.card{
+    padding: 1.5rem;
+    display: flex;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+
+h2{
+    padding: 0.55rem 0;
+}
+
+.card-avatar{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.card-info{
+margin-left: 1rem;
+display: flex;
+justify-content: space-between;
+flex-direction: column;
+}
+
+
+.box{
+    border-radius: 10%;
+    color: white;
+    font-size: 13px;
+    padding:0.25rem 0.5rem;
+    display: inline-block;
+    text-transform: uppercase;
+    background-color:hsl(180, 29%, 50%);
+}
+#company-name{
+    font-weight: bold;
+    color: hsl(180, 29%, 50%);
+}
+
+#feature-card{
+    background-color: hsl(180, 14%, 20%);
+}
+
+
+.filter-tags{
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.tag{
+    padding: 0.35rem;
+    font-weight: bold;
+    margin-left: 1rem;
+    background-color: hsl(180, 52%, 96%);
+    color: hsl(180, 29%, 50%);
+}
+
+.tag:hover{
+    background-color: hsl(180, 29%, 50%);
+    cursor: pointer;
+    color: white;
+}
+
+.job-details{
+    display: flex;
+    justify-content: space-between;
+    color: hsl(180, 8%, 52%)
+}
+
+.filter-option{
+    background-color: red;
+    display: flex;
+    align-items: center;
+    background-color:hsl(180, 52%, 96%); 
+    color: hsl(180, 29%, 50%);
+    margin-right: 1rem;
+}
+
+.filters{
+    background-color: white;
+    display: flex;
+    padding: 2rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 5px;
+    margin-top: 2rem;
+}
+.fa-times{
+    background-color: hsl(180, 29%, 50%);
+    color: hsl(180, 52%, 96%); 
+    padding:0.5rem;
+}
+
+.fa-times:hover{
+    background-color: hsl(180, 14%, 20%);
+    cursor: pointer;
+}
+
+.filter-item{
+    padding:0 0.35rem;
+}
+
+
+@media only screen and (max-width: 1048px) {
+    .card{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .filter-tags{
+        margin: 0;
+       justify-content: start;
+    }
+
+    .tag{
+        margin-top: 1rem;
+        margin-left:0;
+        margin-right: 1rem;
+    }
+
+    .card-info{
+        margin-left:0;
+    }
+  }
